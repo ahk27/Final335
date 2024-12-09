@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Quarterbacks</title>
+  <link rel="stylesheet" href="/styless.css"> 
+</head>
+<body>
+  <h1>All Quarterbacks</h1>
+  <ul>
+    <% qbs.forEach(qb => { %>
+        <li><%= qb.name %> (<%= qb.team %>) - Touchdowns: <%= qb.touchdowns %>, Interceptions: <%= qb.interceptions %>, QBR: <%= qb.qbr %></li>
+    <% }); %>
+  </ul>
+  <a href="/">HOME</a>
+</body>
+</html>

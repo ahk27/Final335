@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Stats</title>
+  <link rel="stylesheet" href="/styless.css"> 
+</head>
+<body>
+  <h1>Quarterbacks for <%= team %> - <%= season %></h1>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Touchdowns</th>
+      <th>Interceptions</th>
+      <th>QBR</th>
+    </tr>
+    <% qbs.forEach(qb => { %>
+      <tr>
+        <td><%= qb.name %></td>
+        <td><%= qb.touchdowns %></td>
+        <td><%= qb.interceptions %></td>
+        <td><%= qb.qbr %></td>
+      </tr>
+    <% }) %>
+  </table>
+  <a href="/">Back to Home</a>
+</body>
+</html>
+

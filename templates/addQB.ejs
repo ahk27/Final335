@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Quarterback</title>
+  <link rel="stylesheet" href="/styless.css"> 
+</head>
+<body>
+  <h1>Add Quarterback</h1>
+  <form action="/addQB" method="post">
+    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Team: <input type="text" name="team" required></label><br>
+    <label>Touchdowns: <input type="number" name="touchdowns" required></label><br>
+    <label>Interceptions: <input type="number" name="interceptions" required></label><br>
+    <label>QBR: <input type="number" name="qbr" step="0.1" required></label><br>
+    <button type="submit">Add Quarterback</button>
+  </form>
+  <a href="/">HOME</a>
+</body>
+</html>
